@@ -110,7 +110,7 @@ h1 span {
     gap: 60px;
 }
 
-.cta-section button, .cta-section a {
+.cta-1, .cta-2 {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -132,15 +132,16 @@ h1 span {
     background-color: rgba(43, 58, 85, 0.9);
     color: white;
 }
-.open-popup-btn.cta-2 {
+.cta-2 {
     background-color: transparent;
     color: rgb(133, 40, 255);
     border: 2px solid rgb(133, 40, 255);
 }
 
-.cta-section button:hover {
+.cta-section button:hover, .cta-section a:hover {
     background-color: rgb(133, 40, 255);
     color: white;
+    border-color: rgb(133, 40, 255);
 }
 
 .hero-img {
