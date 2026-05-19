@@ -19,7 +19,7 @@
             <a class="nav-item" href="Blog.html">Blog</a>
             <a class="nav-item" href="Contact.html">Contact me</a>
         </nav>
-        <button class="header-btn">Let's Talk</button>
+        <button class="header-btn open-popup-btn">Let's Talk</button>
     </header>
 
     <main class="about-container">
@@ -67,5 +67,26 @@
             </div>
         </div>
     </main>
+        <script>
+        const popup = document.getElementById("contactPopup");
+        const openButtons = document.querySelectorAll(".open-popup-btn");
+        const closeButton = document.querySelector(".close-popup-btn");
+
+        openButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                popup.classList.add("show-popup");
+            });
+        });
+
+        closeButton.addEventListener("click", () => {
+            popup.classList.remove("show-popup");
+        });
+
+        window.addEventListener("click", (event) => {
+            if (event.target === popup) {
+                popup.classList.remove("show-popup");
+            }
+        });
+    </script>
 </body>
 </html>
